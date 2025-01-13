@@ -1,0 +1,55 @@
+.assessments {
+    width: 90%;
+    max-width: 1400px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .assessments h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #1a202c;
+    text-align: center;
+  }
+  
+  .assessment-card {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .assessment-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .assessment-card h3 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+  }
+  
+  .assessment-card a {
+    color: #3182ce;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .assessment-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .assessment-card p {
+    font-size: 1rem;
+    color: #4a5568;
+    line-height: 1.6;
+  }
+  
