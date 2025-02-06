@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./Navigation.css";
 
 function Navigation() {
@@ -55,6 +56,23 @@ function Navigation() {
           </NavLink>
         </li>
       </ul>
+      
+      <div className="social-icons">
+        <a
+          href="https://github.com/MylasJacob123"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub className="icon" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jacob-mylas-5057ba340/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin className="icon" />
+        </a>
+      </div>
     </nav>
   );
 }

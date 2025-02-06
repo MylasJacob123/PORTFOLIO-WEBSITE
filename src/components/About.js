@@ -55,7 +55,7 @@ function About() {
             </ul>
           </div>
           <div className="about-image">
-            <img src={Me} alt="a image of me" />
+            <img src={Me} alt="Me" />
           </div>
         </div>
       </div>

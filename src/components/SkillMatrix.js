@@ -1,13 +1,11 @@
 import React from "react";
 import "./SkillMatrix.css";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
   DiGit,
-  DiJava,
 } from "react-icons/di";
 import { SiFirebase, SiHtml5, SiCss3 } from "react-icons/si";
 

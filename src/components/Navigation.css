@@ -85,6 +85,13 @@
   transform: scale(1.2);
 }
 
+.icon {
+  font-size: 2.5rem;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  color: whitesmoke;
+}
+
 @media (max-width: 768px) {
   .menu-icon {
     display: flex;
