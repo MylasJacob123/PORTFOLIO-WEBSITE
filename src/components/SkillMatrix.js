@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SkillMatrix.css";
 import {
   DiJavascript1,
@@ -10,11 +10,18 @@ import {
 import { SiFirebase, SiHtml5, SiCss3 } from "react-icons/si";
 
 function SkillMatrix() {
+  const [viewMode, setViewMode] = useState("Skillset");
+
+  const toggleView = () => {
+    setViewMode(viewMode === "Skillset" ? "Proficiency" : "Skillset");
+  };
+
   const techSkills = [
     {
       icon: <SiHtml5 />,
       skill: "HTML",
       level: "Intermediate",
+      percentage: 75,
       description:
         "Used to structure and create the content of web pages. Used in multiple projects.",
     },
@@ -22,13 +29,14 @@ function SkillMatrix() {
       icon: <SiCss3 />,
       skill: "CSS",
       level: "Intermediate",
-      description:
-        "Styled and designed web pages to be visually appealing.",
+      percentage: 70,
+      description: "Styled and designed web pages to be visually appealing.",
     },
     {
       icon: <DiJavascript1 />,
       skill: "JavaScript",
       level: "Beginner",
+      percentage: 50,
       description:
         "Used it to add dynamic behavior and functionality to websites.",
     },
@@ -36,27 +44,28 @@ function SkillMatrix() {
       icon: <DiNodejs />,
       skill: "Node.js",
       level: "Intermediate",
-      description:
-        "Built server-side applications and APIs using Node.js.",
+      percentage: 65,
+      description: "Built server-side applications and APIs using Node.js.",
     },
     {
       icon: <DiReact />,
       skill: "React",
       level: "Intermediate",
-      description:
-        "Built dynamic and interactive user interfaces with React.",
+      percentage: 70,
+      description: "Built dynamic and interactive user interfaces with React.",
     },
     {
       icon: <DiMongodb />,
       skill: "MongoDB",
       level: "Beginner",
-      description:
-        "Used MongoDB to store and manage data in NoSQL databases.",
+      percentage: 40,
+      description: "Used MongoDB to store and manage data in NoSQL databases.",
     },
     {
       icon: <DiGit />,
       skill: "Git",
       level: "Beginner",
+      percentage: 55,
       description:
         "Experience in using Git for source code tracking, and working with GitHub repositories.",
     },
@@ -64,6 +73,7 @@ function SkillMatrix() {
       icon: <SiFirebase />,
       skill: "Firebase",
       level: "Intermediate",
+      percentage: 60,
       description:
         "Integrated Firebase for real-time databases, authentication, and hosting.",
     },
@@ -71,7 +81,10 @@ function SkillMatrix() {
 
   return (
     <div className="techstack-container">
-      <h1>Skillset</h1>
+      <h1>{viewMode}</h1>
+      <button className="toggle-button" onClick={toggleView}>
+        {viewMode === "Skillset" ? "Proficiency" : "Skillset"}
+      </button>
       <div className="tech-icons-container">
         {techSkills.map((tech, index) => (
           <div className="tech-icon" key={index}>
@@ -79,9 +92,23 @@ function SkillMatrix() {
               <div className="flip-card-inner">
                 <div className="flip-card-front">{tech.icon}</div>
                 <div className="flip-card-back">
-                  <h6>{tech.skill}</h6>
-                  <p>{tech.level}</p>
-                  <p>{tech.description}</p>
+                  {viewMode === "Skillset" ? (
+                    <>
+                      <h6>{tech.skill}</h6>
+                      <p>{tech.description}</p>
+                    </>
+                  ) : (
+                    <>
+                      <h6>{tech.skill}</h6>
+                      <div className="progress-bar-container">
+                        <div
+                          className="progress-bar"
+                          style={{ width: `${tech.percentage}%` }}
+                        ></div>
+                      </div>
+                      <p>{tech.percentage}%</p>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

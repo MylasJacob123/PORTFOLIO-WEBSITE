@@ -6,6 +6,38 @@
   padding-bottom: 50px;
 }
 
+.toggle-button {
+  margin: 15px 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #7a8c98;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+/* .toggle-button:hover {
+  background-color: #1f2937;
+} */
+
+.progress-bar-container {
+  width: 100px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #1d4ed8;
+  transition: width 0.5s ease-in-out;
+}
+
 .techstack-container h1 {
     color: #4b5563;
 }
