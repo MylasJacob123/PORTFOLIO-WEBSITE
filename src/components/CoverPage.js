@@ -15,7 +15,7 @@ function CoverPage() {
           </p>
           <hr />
           <div className="btn-container">
-            <a href="https://drive.google.com/file/d/11Uv-QKO_q5X3gnZNQrB7YGsqKC00YBRH/view?usp=drive_link">
+            <a href="/Lebogang Amie Jacob Mylas's Resume-2.pdf" >
               <button className="Btn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
