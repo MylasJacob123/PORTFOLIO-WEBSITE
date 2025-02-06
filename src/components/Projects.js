@@ -105,13 +105,11 @@ function Projects() {
       <div className="projects-list">
         {view === "individual" && (
           <>
-            <h2>Individual Projects</h2>
             {renderProjectCards(projectData)}
           </>
         )}
         {view === "group" && (
           <>
-            <h2>Group Projects</h2>
             {renderProjectCards(groupProjects)}
           </>
         )}
