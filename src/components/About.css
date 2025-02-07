@@ -85,7 +85,7 @@
 
 @media (max-width: 768px) {
   .about-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     padding: 15px;
   }

@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
+  width: 100%;
 }
 
 .toggle-button {
@@ -19,9 +20,38 @@
   border-radius: 5px;
 }
 
-/* .toggle-button:hover {
-  background-color: #1f2937;
-} */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tabs button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 18px;
+  background-color: #7a8c98;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.tabs button:hover {
+  background-color: #475569;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.tabs button.active-tab {
+  background-color: #2563eb;
+  color: #ffffff;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+}
 
 .progress-bar-container {
   width: 100px;
@@ -133,4 +163,69 @@ h6 {
 p {
   font-size: 12px;
   font-weight: lighter;
+}
+
+.achievements-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.achievements-list ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.completed {
+  color: green;
+}
+
+.incomplete {
+  color: red;
+}
+
+.achievements-list-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center; 
+}
+
+.achievement-card {
+  max-width: 380px; 
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #1e293b;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.achievement-card span {
+  display: block;
+  text-align: center;
+}
+
+.completed {
+  color: green;
+}
+
+.incomplete {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .achievement-card {
+    max-width: 330px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .achievement-card {
+    max-width: 330px; 
+  }
 }
