@@ -301,9 +301,8 @@
     gap: 1.5rem;
   }
 
-  .hero-img img {
-    max-width: 300px;
-    height: auto;
+  .hero-img {
+    display: none;
   }
 
   .btn-container {
@@ -325,9 +324,8 @@
     width: 100%;
   }
 
-  .hero-img img {
-    max-width: 250px;
-    height: auto;
+  .hero-img {
+    display: none;
   }
 
   .animated-text h1 {
