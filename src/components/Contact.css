@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 95px;
+  margin-top: 115px;
 }
 
 .contact-header {
@@ -13,6 +13,7 @@
   background-color: #f4f4f4;
   margin-top: 1.5625rem;
   width: 80%;
+  padding: 2.5rem 1.25rem;
 }
 
 .contact-header h1 {
@@ -23,6 +24,7 @@
 .contact-header p {
   font-size: 1.125rem;
   color: #777;
+  font-weight: 300;
 }
 
 .contact-info {
@@ -43,6 +45,7 @@
 .contact-info-item p {
   font-size: 1rem;
   color: #333;
+  font-weight: 300;
 }
 
 .contact-form-container {

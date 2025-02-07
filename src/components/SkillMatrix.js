@@ -81,9 +81,9 @@ function SkillMatrix() {
 
   return (
     <div className="techstack-container">
-      
+      <h1>{viewMode}</h1>
       <button className="toggle-button" onClick={toggleView}>
-        {viewMode === "Skillset" ? "Proficiency" : "Skillset"}
+        View {viewMode === "Skillset" ? "Proficiency" : "Skillset"}
       </button>
       <div className="tech-icons-container">
         {techSkills.map((tech, index) => (

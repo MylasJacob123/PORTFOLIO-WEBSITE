@@ -9,7 +9,6 @@ function CoverPage() {
         <div className="animated-text">
           <h1>Hi there,</h1>
           <p className="name">I'm Jacob Mylas</p>
-          {/* <span  className="title">Junior Developer</span> */}
           <ul className="title">
             <li>Junior Developer</li>
             <li>Frontend Developer</li>
