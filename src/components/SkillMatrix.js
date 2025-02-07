@@ -17,35 +17,35 @@ function SkillMatrix() {
       icon: <SiHtml5 />,
       skill: "HTML",
       level: "Intermediate",
-      percentage: 45,
+      percentage: 40,
       description: "Used to structure and create the content of web pages.",
     },
     {
       icon: <SiCss3 />,
       skill: "CSS",
       level: "Intermediate",
-      percentage: 50,
+      percentage: 30,
       description: "Styled and designed web pages.",
     },
     {
       icon: <DiJavascript1 />,
       skill: "JavaScript",
       level: "Beginner",
-      percentage: 30,
+      percentage: 60,
       description: "Used to add dynamic behavior to websites.",
     },
     {
       icon: <DiNodejs />,
       skill: "Node.js",
       level: "Beginner",
-      percentage: 45,
+      percentage: 70,
       description: "Built server-side applications using Node.js.",
     },
     {
       icon: <DiReact />,
       skill: "React",
       level: "Beginner",
-      percentage: 60,
+      percentage: 80,
       description: "Built dynamic UIs with React.",
     },
     {
@@ -147,6 +147,7 @@ function SkillMatrix() {
                   <div className="flip-card-front">{tech.icon}</div>
                   <div className="flip-card-back">
                     <h6>{tech.skill}</h6>
+                    <h6>{tech.level}</h6>
                     <div className="progress-bar-container">
                       <div
                         className="progress-bar"
